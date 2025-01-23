@@ -1,5 +1,7 @@
 .card {
     max-width: 413px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+
 }
 
 .card__image {
@@ -22,6 +24,12 @@
     border: none;
     background-color: transparent;
     opacity: 40%;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 @media screen and (max-width: 627px) {
