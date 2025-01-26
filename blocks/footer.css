@@ -1,10 +1,7 @@
 .footer {
-    width: 104px;
-    height: 16px;
-    gap: 0px;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
-    text-align: left;
-    background: #212121B2;
+    text-align: center;
+    color: #212121B2;
 }
