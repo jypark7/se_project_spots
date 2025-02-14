@@ -61,6 +61,8 @@
     background-color: #212121;
     color: #FCF5E5;
     align-self: end;
+    border-radius: 8px;
+    border: none;
 }
 
 @media screen and (max-width: 627px){
