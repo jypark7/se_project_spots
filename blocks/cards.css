@@ -1,14 +1,14 @@
 .cards {
     padding-top: 20px;
-    border-bottom: 1px solid #21212166;
-    padding-bottom: 20px;
 }
 
 .cards__list {
+    border-bottom: 1px solid #21212166;
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: grid;
+    padding-bottom: 20px;
     grid-template-columns: repeat(auto-fit, 413px);
     justify-content: center;
     gap: 40px 20px;
@@ -18,5 +18,7 @@
     .cards__list {
         grid-template-columns: repeat(auto-fit, 288px);
         gap: 20px;
+        width: fit-content;
+        margin: auto;
     }
 }

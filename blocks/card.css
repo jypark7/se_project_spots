@@ -45,9 +45,8 @@
     }
 
     .card__title {
-        max-width: 95px;
+        max-width: 260px;
         font-size: 16px;
-        font-weight: 500;
         line-height: 16px;
     }
     
