@@ -25,6 +25,7 @@
     border: none;
     background-color: transparent;
     opacity: 40%;
+    cursor: pointer;
 }
 
 .card__title {
@@ -47,7 +48,4 @@
     .card__title {
         max-width: 260px;
         font-size: 16px;
-        line-height: 16px;
-    }
-    
-}
+        line-height: 16p
