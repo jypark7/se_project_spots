@@ -20,4 +20,6 @@ This webpage is deployed to Github project
 
 ## Video
 
-This
+This is my presentation
+
+- [Video link](https://www.loom.com/share/e270aaea32524775b3a91cba1512b8c7?sid=92cc6934-20af-4e78-9dbc-7858dc9674ff)
