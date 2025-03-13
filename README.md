@@ -16,7 +16,7 @@ Spots projects that is presented with small descriptions of each image
 
 This webpage is deployed to Github project
 
-- [Deployment link](git@github.com:jypark7/se_project_spots.git)
+- [Deployment link](http://127.0.0.1:5500/index.html)
 
 ## Video
 
