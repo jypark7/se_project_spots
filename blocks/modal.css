@@ -1,10 +1,12 @@
+/* add correct font styles on all AND responsive design */
+
 .modal {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00000080;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -13,7 +15,7 @@
     padding: 0 20px;
 }
 
-.modal__opened {
+.modal_is-opened {
     visibility: visible;
 }
 
@@ -24,6 +26,7 @@
     width: 100%;
     box-sizing: border-box;
     position: relative;
+    border-radius: 8px;
 }
 
 .modal__close-btn {
@@ -32,24 +35,45 @@
     right: 50px;
     width: 40px;
     height: 40px;
+    color: #2121214d;
+    /* add close icon and make sure it looks right */
 }
 
 .modal__title {
+    font-family: 'Poppins';
     margin: 0 0 32px;
     font-weight: 500;
     font-size: 32px;
     line-height: 32px;
 }
 
+.modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
 .modal__label {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 32px;
+    margin: 0 0 32px;
+    color: #212121B2;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .modal__input {
+    display: block;
     padding: 16px 12px;
+    margin: 8px 0 0;
+    border: 1px;
+    border-color: #2121214d;
+
+}
+
+.modal__input::placeholder{
+    color: #2121214d;
 }
 
 .modal__submit-btn {
@@ -67,9 +91,11 @@
     }
 
     .modal__title {
+        font-family: 'Poppins';
         font-size: 20px;
-        margin-bottom: 24px;
-        margin: 10px 0 32px;
+        font-weight: 500;
+        line-height: 100%;
+        margin: 12px 22px 34px  0;
     }
 
     .modal__close-btn {
@@ -83,5 +109,6 @@
 
     .modal__submit-btn {
         width: 100%;
+        max-width: none;
     }
 }
