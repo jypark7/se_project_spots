@@ -9,16 +9,16 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
     "#profile-description-input"
 );
 
-const editPostBtn = document.querySelector(".profile__new-post-btn");
-const editPodtModal = document.querySelector("#new-post-modal");
-const editPostClosedBtn = newPostModal.querySelector(".modal__close-btn");
+const newPostBtn = document.querySelector(".profile__new-post-btn");
+const newPostModal = document.querySelector("#new-post-modal");
+const newPostClosedBtn = newPostModal.querySelector(".modal__close-btn");
 
-const profileNameEl = document.querySelector("profile__name");
-const profileDescriptionEl = document.querySelector("profile__description");
+const profileNameEl = document.querySelector(".profile__name");
+const profileDescriptionEl = document.querySelector(".profile__description");
 
 editProfileBtn.addEventListener("click", function () {
-    editProfileNameInput.value = profileNameEl.textcontent;
-    editProfileDescriptionInput.value = profileDescriptionEl.textcontent;
+    editProfileNameInput.value = profileNameEl.textContent;
+    editProfileDescriptionInput.value = profileDescriptionEl.textContent;
     editProfileModal.classList.add("modal_is-opened");
 });
 
