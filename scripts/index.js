@@ -66,12 +66,10 @@ editProfileClosedBtn.addEventListener("click", () => {
 });
 
 
-// Opens the new post modal
 newPostBtn.addEventListener("click", function () {
     openModal(newPostModal);
 });
 
-// 
 
 newPostClosedBtn.addEventListener("click", function () {
     closeModal(newPostModal);
