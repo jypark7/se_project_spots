@@ -46,6 +46,10 @@ const linkInput = newPostModal.querySelector("#card-caption-input");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
+function getCardElement(data) {
+    console.log(data)
+}
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
 }
@@ -95,6 +99,5 @@ newPostFormElement.addEventListener("submit", handleNewPostSubmit);
 
 
 initialCards.forEach(function (item){
-    console.log(item.name);
-    console.log(item.link);
+    getCardElement(item);
 });``
