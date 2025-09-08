@@ -46,8 +46,22 @@ const linkInput = newPostModal.querySelector("#card-caption-input");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
+
+const cardTemplate = document 
+    .querySelector("#card-template")
+    .content.querySelector(".card");
+
 function getCardElement(data) {
-    console.log(data)
+    const cardElement = cardTemplate
+    .cloneNode(true);
+    const cardTitleEl = cardElement.querySelector(".card__title");
+    const cardImageEl = cardElement.querySelector(".card__image");
+
+    cardImageEl.src = data.link;
+    cardImageEl.alt = data.image;
+    cardTitleEl.textContent = data.name;
+
+    return cardElement;
 }
 
 function openModal(modal) {
@@ -99,5 +113,5 @@ newPostFormElement.addEventListener("submit", handleNewPostSubmit);
 
 
 initialCards.forEach(function (item){
-    getCardElement(item);
+    console.log(getCardElement(item));
 });``
