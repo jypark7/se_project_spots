@@ -105,8 +105,17 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 function handleNewPostSubmit(evt) {
     evt.preventDefault();
+
     console.log(nameInput.value);
     console.log(linkInput.value);
+    const cardElement = getCardElement({
+        name: nameInput.value,
+        link: linkInput.value,
+    });
+
+    const cardElement = getCardElement(inputValues);
+    cardsList.prepend(cardElement);
+
     closeModal(newPostModal);
 }
 
