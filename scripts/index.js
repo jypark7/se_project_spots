@@ -50,6 +50,7 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 const cardTemplate = document 
     .querySelector("#card-template")
     .content.querySelector(".card");
+    const cardsList.querySelector(".cards-list");
 
 function getCardElement(data) {
     const cardElement = cardTemplate
@@ -113,5 +114,6 @@ newPostFormElement.addEventListener("submit", handleNewPostSubmit);
 
 
 initialCards.forEach(function (item){
-    console.log(getCardElement(item));
-});``
+    const cardElement = getCardElement(item);
+    cardsList.append(cardElement);
+});
