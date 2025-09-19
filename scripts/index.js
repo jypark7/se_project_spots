@@ -50,7 +50,7 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 const cardTemplate = document 
     .querySelector("#card-template")
     .content.querySelector(".card");
-    const cardsList.querySelector(".cards-list");
+    const cardsList = doocument.querySelector(".cards__list");
 
 function getCardElement(data) {
     const cardElement = cardTemplate
