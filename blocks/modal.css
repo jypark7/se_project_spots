@@ -31,6 +31,25 @@
     border-radius: 8px;
 }
 
+.modal__container_type_image {
+    background: transparent;
+    padding: 0;
+    max-width: none;
+  }
+  
+  .modal__image {
+    max-width: 80vw;
+    max-height: 80vh;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .modal__caption {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
 .modal__close-btn {
     position: absolute;
     top: 32px;
