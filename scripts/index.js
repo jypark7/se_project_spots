@@ -41,8 +41,8 @@ const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostClosedBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostFormElement = newPostModal.querySelector(".modal__form");
-const nameInput = newPostModal.querySelector("#card-image-input");
-const linkInput = newPostModal.querySelector("#card-caption-input");
+const linkInput = newPostModal.querySelector("#card-image-input");
+const nameInput = newPostModal.querySelector("#card-caption-input");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
@@ -59,7 +59,7 @@ function getCardElement(data) {
     const cardImageEl = cardElement.querySelector(".card__image");
 
     cardImageEl.src = data.link;
-    cardImageEl.alt = data.image;
+    cardImageEl.alt = data.name;
     cardTitleEl.textContent = data.name;
 
     return cardElement;
