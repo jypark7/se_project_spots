@@ -36,7 +36,7 @@
 .profile__description {
     margin: 0;
     max-width: 420px;
-    color: #212121B2;
+    color: rgba(33, 33, 33, 0.7);
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -45,7 +45,6 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    line-clamp: 3;
 }
 
 .profile__edit-btn {
@@ -83,6 +82,7 @@
     align-self: end;
     border-radius: 8px;
     border: none;
+    transition: opacity 0.2s ease;
 }
 
 .profile__add-btn:hover {
