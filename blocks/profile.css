@@ -27,8 +27,9 @@
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
 }
 
 
@@ -42,8 +43,9 @@
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
 }
 
 .profile__edit-btn {
@@ -84,7 +86,7 @@
 }
 
 .profile__add-btn:hover {
-    opacity: 80%;
+    opacity: 0.8;
     cursor: pointer;
 }
 
