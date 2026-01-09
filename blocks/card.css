@@ -1,6 +1,7 @@
 .card {
     max-width: 413px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
 .card__image {
@@ -9,6 +10,7 @@
     width: 100%;
     object-fit: cover;
     display: block;
+    cursor: pointer;
 }
 
 .card__content {
@@ -24,11 +26,11 @@
     height: 20px;
     border: none;
     background-color: transparent;
-    opacity: 40%;
+    opacity: 0.4;
   }
   
   .card__like-btn:hover {
-    opacity: 100%;
+    opacity: 1;
     cursor: pointer;
   }
 
@@ -55,7 +57,7 @@
     right: 10px;
     width: 18px;
     height: 19px;
-    background-image: url(../images/delete.svg);
+    background-image: url(../images/X.svg);
     background-color: transparent;
     border: none;
     cursor: pointer;
