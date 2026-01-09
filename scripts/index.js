@@ -52,6 +52,32 @@ const cardTemplate = document
     .content.querySelector(".card");
     const cardsList = document.querySelector(".cards__list");
 
+    const likeBtn = cardElement.querySelector(".card__like-btn");
+likeBtn.addEventListener("click", () => {
+    likeBtn.classList.toggle("card__like-btn_active");
+});
+
+const deleteBtn = cardElement.querySelector(".card__delete-btn");
+deleteBtn.addEventListener("click", () => {
+    cardElement.remove();
+});
+
+cardImageEl.addEventListener("click", () => {
+    const previewModal = document.querySelector("#preview-image-modal");
+    const previewImg = previewModal.querySelector(".modal__image");
+    const previewCaption = previewModal.querySelector(".modal__caption");
+    previewImg.src = data.link;
+    previewImg.alt = data.name;
+    previewCaption.textContent = data.name;
+    openModal(previewModal);
+});
+
+const previewCloseBtn = document.querySelector("#preview-image-modal .modal__close-btn");
+previewCloseBtn.addEventListener("click", () => {
+    closeModal(document.querySelector("#preview-image-modal"));
+});
+
+
 function getCardElement(data) {
     const cardElement = cardTemplate
     .cloneNode(true);
